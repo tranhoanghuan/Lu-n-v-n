@@ -1,0 +1,4 @@
+﻿-- Nhiều loại admin: 
+-- Set code value: 3 loại: active/inactive, count(không được phép thay đổi), biến môi trường. (use dropdown list) 
+-- remake: ghi chú 
+-- Cửa hàng nhiều chi nhánh: 
