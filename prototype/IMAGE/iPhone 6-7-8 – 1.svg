@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 375 667">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iPhone_6_7_8_1);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        filter: url(#Ellipse_2);
+      }
+
+      .cls-5 {
+        filter: url(#Ellipse_1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.247" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1d85d5"/>
+      <stop offset="1" stop-color="#80bef2"/>
+    </linearGradient>
+    <filter id="Ellipse_1" x="-164" y="-126" width="467" height="467" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2" x="89" y="447" width="467" height="467" filterUnits="userSpaceOnUse">
+      <feOffset dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-iPhone_6_7_8_1">
+      <rect width="375" height="667"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_6_7_8_1" data-name="iPhone 6/7/8 – 1" class="cls-1">
+    <rect class="cls-3" width="375" height="667"/>
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" class="cls-2" cx="203.5" cy="203.5" r="203.5" transform="translate(-134 -102)"/>
+    </g>
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" class="cls-2" cx="203.5" cy="203.5" r="203.5" transform="translate(119 483)"/>
+    </g>
+  </g>
+</svg>

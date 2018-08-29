@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 145 145">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-10, .cls-12, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: rgba(112,112,112,0.65);
+        stroke-linecap: round;
+        opacity: 0.34;
+      }
+
+      .cls-10, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #d2d2d2;
+      }
+
+      .cls-5 {
+        opacity: 0.46;
+      }
+
+      .cls-6 {
+        opacity: 0.53;
+      }
+
+      .cls-7 {
+        opacity: 0.21;
+      }
+
+      .cls-8 {
+        opacity: 0.26;
+      }
+
+      .cls-9 {
+        opacity: 0.23;
+      }
+
+      .cls-11 {
+        stroke: none;
+      }
+
+      .cls-13 {
+        filter: url(#Path_653);
+      }
+
+      .cls-14 {
+        filter: url(#Rectangle_1462);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.136" y2="0.957" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1d85d5"/>
+      <stop offset="1" stop-color="#74b7ef"/>
+    </linearGradient>
+    <filter id="Rectangle_1462" x="0" y="0" width="145" height="145" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_653" x="27" y="46.183" width="94" height="80.817" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_310" data-name="Group 310" transform="translate(-6 -78)">
+    <g id="Group_309" data-name="Group 309" transform="translate(0 -1)">
+      <g class="cls-14" transform="matrix(1, 0, 0, 1, 6, 79)">
+        <rect id="Rectangle_1462-2" data-name="Rectangle 1462" class="cls-1" width="85" height="85" rx="20" transform="translate(30 27)"/>
+      </g>
+      <g id="Group_306" data-name="Group 306">
+        <circle id="Ellipse_245" data-name="Ellipse 245" class="cls-2" cx="2" cy="2" r="2" transform="translate(85 118)"/>
+        <circle id="Ellipse_245-2" data-name="Ellipse 245" class="cls-2" cx="2" cy="2" r="2" transform="translate(90 118)"/>
+        <circle id="Ellipse_245-3" data-name="Ellipse 245" class="cls-2" cx="2" cy="2" r="2" transform="translate(95 118)"/>
+        <g id="Group_305" data-name="Group 305" transform="translate(8 -11)">
+          <rect id="Rectangle_1463" data-name="Rectangle 1463" class="cls-2" width="8" height="7" rx="2" transform="translate(93 128)"/>
+          <path id="Path_652" data-name="Path 652" class="cls-3" d="M1.288,0V3" transform="translate(96.212 128.5)"/>
+        </g>
+        <rect id="Rectangle_1464" data-name="Rectangle 1464" class="cls-2" width="24" height="6" rx="3" transform="translate(46 117)"/>
+      </g>
+    </g>
+    <g id="Group_308" data-name="Group 308">
+      <g id="Group_307" data-name="Group 307">
+        <g id="Ellipse_246" data-name="Ellipse 246" class="cls-4" transform="translate(59 136)">
+          <circle class="cls-11" cx="21" cy="21" r="21"/>
+          <circle class="cls-12" cx="21" cy="21" r="20"/>
+        </g>
+        <g class="cls-13" transform="matrix(1, 0, 0, 1, 6, 78)">
+          <path id="Path_653-2" data-name="Path 653" class="cls-2" d="M18.8,18.5C28.19,18.5,34,7.611,34,17A17,17,0,0,1,0,17c0-5.6,8.313-1.647,8.313-1.647S15.008,18.5,18.8,18.5Z" transform="translate(57 62)"/>
+        </g>
+        <circle id="Ellipse_247" data-name="Ellipse 247" class="cls-5" cx="0.5" cy="0.5" r="0.5" transform="translate(86 159)"/>
+        <circle id="Ellipse_248" data-name="Ellipse 248" class="cls-6" cx="0.5" cy="0.5" r="0.5" transform="translate(90 157)"/>
+        <circle id="Ellipse_249" data-name="Ellipse 249" class="cls-7" cx="1.5" cy="1.5" r="1.5" transform="translate(66 156)"/>
+        <circle id="Ellipse_250" data-name="Ellipse 250" class="cls-8" cx="1" cy="1" r="1" transform="translate(69 159)"/>
+        <circle id="Ellipse_251" data-name="Ellipse 251" class="cls-9" cx="0.5" cy="0.5" r="0.5" transform="translate(72 161)"/>
+      </g>
+      <path id="Path_654" data-name="Path 654" class="cls-10" d="M0,.109H85" transform="translate(36 126.375)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Menu" transform="translate(-35 -37)">
+    <rect id="Rectangle_175" data-name="Rectangle 175" class="cls-1" width="16" height="16" transform="translate(35 37)"/>
+    <path id="Union_4" data-name="Union 4" class="cls-2" d="M0,14V12H8v2ZM0,8V6H16V8ZM11.5,2H0V0H16V2Z" transform="translate(35 38)"/>
+  </g>
+</svg>

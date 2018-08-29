@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2699fb;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_293" data-name="Group 293" transform="translate(-303 -595)">
+    <path id="Path_648" data-name="Path 648" class="cls-1" d="M12,0A12,12,0,0,1,24,12a12.128,12.128,0,0,1-4.085,9.02A11.767,11.767,0,0,1,12,24,12,12,0,0,1,12,0Z" transform="translate(303 595)"/>
+    <g id="_" data-name="+" transform="translate(14 496)">
+      <path id="Union_1" data-name="Union 1" class="cls-2" d="M-4616.5,8V4.5h-3.5v-1h3.5V0h1V3.5h3.5v1h-3.5V8Z" transform="translate(4917 107)"/>
+    </g>
+  </g>
+</svg>
