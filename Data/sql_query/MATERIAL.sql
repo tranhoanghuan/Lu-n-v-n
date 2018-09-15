@@ -7,3 +7,5 @@ create table material(
     UPDATE_DATE	TIMESTAMP,
     status varchar(200)
 );
+
+create sequence material_seq;

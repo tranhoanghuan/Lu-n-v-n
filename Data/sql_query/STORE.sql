@@ -9,3 +9,4 @@ create table store (
     status varchar(200)
 )
 create sequence store_seq;
+/

@@ -12,3 +12,4 @@ create table washing_machine (
 );
 
 create sequence washing_machine_seq;
+/

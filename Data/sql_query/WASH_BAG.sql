@@ -9,3 +9,4 @@ create table wash_bag(
     status varchar(200)
 );
 create sequence wash_bag_seq;
+/

@@ -13,3 +13,4 @@ create table promotion(
 );
 
 create sequence promotion_seq;
+/

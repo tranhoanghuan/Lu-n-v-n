@@ -7,3 +7,5 @@ create table label (
     UPDATE_DATE	TIMESTAMP,
     status varchar(200)
 );
+
+create sequence label_seq;

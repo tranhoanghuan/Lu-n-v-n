@@ -16,6 +16,7 @@ create table customer(
     create_by	numeric(19,0),
     update_by	numeric(19,0),
     create_date	timestamp,
-    update_date	timestamp,
+    update_date	timestamp
 );
 create  sequence customer_seq;
+/

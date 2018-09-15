@@ -12,3 +12,6 @@ create table dryer (
 );
 
 create sequence dryer_seq;
+
+alter table dryer add constraint fk_dryer_branch_id foreign key (branch_id) references branch(id);
+/

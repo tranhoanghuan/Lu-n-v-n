@@ -10,3 +10,5 @@ create table color (
 );
 
 create sequence color_seq;
+
+alter table color add constraint fk_color_color_group_id foreign key (color_group_id) references color_group(id);

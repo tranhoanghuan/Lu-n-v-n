@@ -8,6 +8,9 @@ create table product(
     status varchar(200),
     product_image text,
     short_desc varchar(200),
+	producy_type_id numeric(19,0)
 );
 
 create sequence product_seq;
+alter table product add constraint fk_product_product_type_id foreign key(producy_type_id) references product_type(id);
+/

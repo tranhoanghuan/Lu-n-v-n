@@ -1,5 +1,6 @@
 create table receipt (
-    id numeric(19,0),
+    id numeric(19,0) primary key,
+    customer_id numeric(19,0),
     order_id numeric(19,0),
     receipt_no varchar(200),
     pick_up_time timestamp,
@@ -12,3 +13,7 @@ create table receipt (
 );
 
 create sequence receipt_seq;
+
+alter table receipt add constraint fk_receipt_customer_id foreign key (customer_id) references customer(id);
+alter table receipt add constraint fk_receipt_order_id foreign key (order_id) references customer_order(id);
+/

@@ -11,3 +11,6 @@ create table service_type(
 );
 
 create sequence service_type_seq;
+
+alter table service_type add constraint fk_service_type_promotion_id foreign key (promotion_id) references promotion(id);
+/
