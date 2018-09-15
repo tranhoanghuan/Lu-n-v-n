@@ -1,7 +1,7 @@
-create table wash (
+create table dry (
     id numeric(19,0) primary key,
-    wash_bag_id numeric(19,0);
-    washing_machine_id numeric(19,0);
+    dry_bag_id numeric(19,0);
+    drying_machine_id numeric(19,0);
     create_by	numeric(19,0),
     update_by	numeric(19,0),
     create_date	timestamp,
@@ -9,4 +9,4 @@ create table wash (
     status varchar(200)
 );
 
-create sequence wash_seq;
+create sequence dry_seq;
