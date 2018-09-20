@@ -1,6 +1,6 @@
 create table receipt_detail(
     id numeric(19,0) primary key,
-	receipt_id numeric(19,0),
+    receipt_id numeric(19,0),
     service_type_id numeric(19,0),
     unit_id numeric(19,0),
     label_id numeric(19,0),

@@ -1,5 +1,5 @@
 create table dryer (
-    id numeric (19,0),
+    id numeric (19,0) primary key,
     branch_id numeric(19,0),
     dryer_no varchar(200),
     bought_date date,
@@ -14,4 +14,4 @@ create table dryer (
 create sequence dryer_seq;
 
 alter table dryer add constraint fk_dryer_branch_id foreign key (branch_id) references branch(id);
-/
+

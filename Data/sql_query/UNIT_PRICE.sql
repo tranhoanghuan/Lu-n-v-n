@@ -17,7 +17,7 @@ create table unit_price(
 
 create sequence unit_price_seq;
 
+alter table unit_price add constraint fk_unit_price_material_id foreign key (material_id) references material(id);
 alter table unit_price add constraint fk_unit_price_product_id foreign key (product_id) references product(id);
 alter table unit_price add constraint fk_unit_price_service_type_id foreign key (service_type_id) references service_type(id);
 alter table unit_price add constraint fk_unit_price_unit_id foreign key (unit_id) references unit(id);
-/

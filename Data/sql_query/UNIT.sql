@@ -9,4 +9,3 @@ create table unit(
 );
 
 create sequence unit_seq;
-/

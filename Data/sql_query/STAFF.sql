@@ -22,5 +22,6 @@ create table staff (
 );
 
 create sequence staff_seq;
+alter table staff add constraint fk_staff_type_id foreign key (staff_type_id) references staff_type(id); 
+alter table staff add constraint fk_branch_id foreign key (branch_id) references branch(id); 
 
-/

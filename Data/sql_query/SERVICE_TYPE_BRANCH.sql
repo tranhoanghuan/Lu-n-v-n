@@ -14,4 +14,3 @@ create sequence service_type_branch_seq;
 alter table service_type_branch add constraint fk_service_type_branch_branch_id foreign key (branch_id) references branch(id);
 
 alter table service_type_branch add constraint fk_service_type_branch_service_type_id foreign key (service_type_id) references service_type(id);
-/

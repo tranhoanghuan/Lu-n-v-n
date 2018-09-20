@@ -7,6 +7,5 @@ create table store (
     CREATE_DATE	TIMESTAMP,
     UPDATE_DATE	TIMESTAMP,
     status varchar(200)
-)
+);
 create sequence store_seq;
-/

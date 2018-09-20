@@ -10,4 +10,3 @@ create table product_type(
 );
 
 create sequence product_type_seq;
-/

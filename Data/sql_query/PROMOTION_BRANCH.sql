@@ -14,4 +14,3 @@ create sequence promotion_branch_seq;
 
 alter table promotion_branch add constraint fk_promotion_branch_branch_id foreign key (branch_id) references branch(id);
 alter table promotion_branch add constraint fk_promotion_branch_promotion_id foreign key (promotion_id) references promotion(id);
-/

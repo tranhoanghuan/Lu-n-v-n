@@ -9,4 +9,3 @@ create table payment (
 );
 
 create sequence payment_seq;
-/

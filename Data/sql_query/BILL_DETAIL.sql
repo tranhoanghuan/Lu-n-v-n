@@ -26,4 +26,3 @@ alter table bill_detail add constraint fk_bill_detail_label_id foreign key (labe
 alter table bill_detail add constraint fk_bill_detail_color_id foreign key (color_id) references color(id);
 alter table bill_detail add constraint fk_bill_detail_product_id foreign key (product_id) references product(id);
 alter table bill_detail add constraint fk_bill_detail_material_id foreign key (material_id) references material(id);
-/

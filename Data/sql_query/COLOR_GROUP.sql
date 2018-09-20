@@ -10,4 +10,3 @@ create table color_group(
 );
 
 create sequence color_group_seq;
-/

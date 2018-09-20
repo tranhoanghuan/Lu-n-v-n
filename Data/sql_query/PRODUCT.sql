@@ -13,4 +13,3 @@ create table product(
 
 create sequence product_seq;
 alter table product add constraint fk_product_product_type_id foreign key(producy_type_id) references product_type(id);
-/

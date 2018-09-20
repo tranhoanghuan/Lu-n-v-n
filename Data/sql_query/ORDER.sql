@@ -3,8 +3,6 @@ create table customer_order (
     order_no varchar(200),
     customer_id numeric(19,0),
     branch_id numeric(19,0),
-    receiver_id numeric(19,0),
-    shipper_id numeric(19,0),
     payment_id numeric(19,0),
     pick_up_date date,
     pick_up_time_id numeric(19,0),
@@ -21,9 +19,6 @@ create sequence customer_order_seq;
 
 alter table customer_order add constraint fk_customer_order_customer_id foreign key (customer_id) references customer(id);
 alter table customer_order add constraint fk_customer_order_branch_id foreign key (branch_id) references branch(id);
-alter table customer_order add constraint fk_customer_order_receiver_id foreign key (receiver_id) references staff(id);
-alter table customer_order add constraint fk_customer_order_shipper_id foreign key (shipper_id) references staff(id);
 alter table customer_order add constraint fk_customer_order_payment_id foreign key (payment_id) references payment(id);
 alter table customer_order add constraint fk_customer_order_pick_up_time_id foreign key (pick_up_time_id) references time_schedule(id);
 alter table customer_order add constraint fk_customer_order_delivery_time_id foreign key (delivery_time_id) references time_schedule(id);
-/

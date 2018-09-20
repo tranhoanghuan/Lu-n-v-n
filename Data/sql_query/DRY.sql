@@ -13,4 +13,3 @@ create sequence dry_seq;
 
 alter table dry add constraint fk_dry_dry_bag_id foreign key (dry_bag_id) references wash_bag(id);
 alter table dry add constraint fk_dry_dry_drying_machine_id foreign key (drying_machine_id) references dryer(id);
-/

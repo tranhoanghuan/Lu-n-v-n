@@ -16,4 +16,3 @@ create sequence receipt_seq;
 
 alter table receipt add constraint fk_receipt_customer_id foreign key (customer_id) references customer(id);
 alter table receipt add constraint fk_receipt_order_id foreign key (order_id) references customer_order(id);
-/

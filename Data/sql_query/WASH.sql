@@ -13,4 +13,4 @@ create sequence wash_seq;
 
 alter table wash add constraint fk_wash_wash_bag_id foreign key (wash_bag_id) references wash_bag(id);
 alter table wash add constraint fk_wash_wash_washing_machine_id foreign key (washing_machine_id) references washing_machine(id);
-/
+

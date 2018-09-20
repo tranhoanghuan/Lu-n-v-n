@@ -10,4 +10,3 @@ create table time_schedule(
     status varchar(200)
 );
 create sequence time_schedule_seq;
-/
