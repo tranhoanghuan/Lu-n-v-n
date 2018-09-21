@@ -1,0 +1,16 @@
+<svg id="web-page-home" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 67.868 60.523">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2e72e3"/>
+      <stop offset="1" stop-color="#58c8f2"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(0 0)">
+    <path id="Path_14" data-name="Path 14" class="cls-1" d="M2.344,62.395H7.872V84.507a2.376,2.376,0,0,0,2.369,2.369H26.431A2.376,2.376,0,0,0,28.8,84.507V68.318h9.871V84.507a2.376,2.376,0,0,0,2.369,2.369h15.4a2.376,2.376,0,0,0,2.369-2.369V62.395h6.713a2.359,2.359,0,0,0,1.658-4.028L36.3,27.055a2.36,2.36,0,0,0-3.317-.039L.726,58.328a2.371,2.371,0,0,0-.553,2.606A2.31,2.31,0,0,0,2.344,62.395ZM34.565,32.069,59.836,57.656h-3.4a2.376,2.376,0,0,0-2.369,2.369V82.138H43.41V65.948a2.376,2.376,0,0,0-2.369-2.369H26.431a2.376,2.376,0,0,0-2.369,2.369V82.138H12.611V60.025a2.376,2.376,0,0,0-2.369-2.369H8.188Z" transform="translate(0 -26.353)"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="down-chevron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.484 38.836">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#39a0e9"/>
+      <stop offset="1" stop-color="#40c2ec"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_80" data-name="Group 80" transform="translate(0 0)">
+    <path id="Path_148" data-name="Path 148" class="cls-1" d="M25.739,94.2a2.51,2.51,0,0,0,4.017,0L54.985,60.4a2.51,2.51,0,1,0-4.017-3.012L27.748,88.512,4.526,57.383a2.486,2.486,0,0,0-3.515-.5A2.486,2.486,0,0,0,.51,60.4Z" transform="translate(0.001 -56.37)"/>
+  </g>
+</svg>
