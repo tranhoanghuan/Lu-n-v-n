@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1492e6;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #1492e6;
+        font-size: 13px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-142 -403)">
+    <g id="Group_2" data-name="Group 2">
+      <g id="Rectangle_1" data-name="Rectangle 1" class="cls-1" transform="translate(142 403)">
+        <rect class="cls-3" width="102" height="33" rx="16.5"/>
+        <rect class="cls-4" x="1" y="1" width="100" height="31" rx="15.5"/>
+      </g>
+      <text id="LUANDRY" class="cls-2" transform="translate(163 425)"><tspan x="0" y="0">LUANDRY</tspan></text>
+    </g>
+  </g>
+</svg>
