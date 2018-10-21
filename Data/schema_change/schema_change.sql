@@ -78,5 +78,9 @@ for tb in SELECT table_name
  end;
 $do$
 
+--Add location for Branch
+alter table branch add latidute varchar(4000);
+alter table branch add longtidute varchar(4000);
+
 
 
