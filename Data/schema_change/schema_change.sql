@@ -54,5 +54,29 @@ create table statistics (
 --+
 
 
+-- Set default
+alter table service_type add CONSTRAINT fk_service_type_avatar FOREIGN key (service_type_avatar) REFERENCES post(id);
+
+DO
+$do$
+declare
+    tb record;
+	full_query text := '';
+begin
+for tb in SELECT table_name
+  FROM information_schema.tables
+ WHERE table_schema='public'
+   AND table_type='BASE TABLE'
+   and table_name not in ('post')
+   loop	
+   		
+   		full_query := 'alter table ' ||  tb.table_name || ' alter column create_date set default now();';
+		execute full_query;
+		full_query := 'alter table ' ||  tb.table_name || ' alter column update_date set default now();';
+		execute full_query;
+   end loop;
+ end;
+$do$
+
 
 
