@@ -85,6 +85,9 @@ alter table branch add longtidute varchar(4000);
 -- Add column address
 alter table customer_order add pick_up_place varchar(4000);
 alter table customer_order add delivery_place varchar(4000);
+--Add promotion into Order
+alter table customer_order add promotion_id numeric(19,0);
+alter table customer_order add constraint fk_customer_order_promotion_id foreign key (promotion_id) references promotion (id);
 
 
 
