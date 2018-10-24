@@ -82,5 +82,9 @@ $do$
 alter table branch add latidute varchar(4000);
 alter table branch add longtidute varchar(4000);
 
+-- Add column address
+alter table customer_order add pick_up_place varchar(4000);
+alter table customer_order add delivery_place varchar(4000);
+
 
 
