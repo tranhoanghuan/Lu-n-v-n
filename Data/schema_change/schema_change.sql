@@ -82,6 +82,7 @@ $do$
 alter table branch add latidute varchar(4000);
 alter table branch add longtidute varchar(4000);
 
+--24/10/2018
 -- Add column address
 alter table customer_order add pick_up_place varchar(4000);
 alter table customer_order add delivery_place varchar(4000);
@@ -89,5 +90,5 @@ alter table customer_order add delivery_place varchar(4000);
 alter table customer_order add promotion_id numeric(19,0);
 alter table customer_order add constraint fk_customer_order_promotion_id foreign key (promotion_id) references promotion (id);
 
-
-
+--add foreign key ro product in order detail
+alter table order_detail add constraint fk_order_detail_product_id foreign key (product_id) references product (id);
