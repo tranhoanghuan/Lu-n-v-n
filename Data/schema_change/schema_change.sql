@@ -92,3 +92,11 @@ alter table customer_order add constraint fk_customer_order_promotion_id foreign
 
 --add foreign key ro product in order detail
 alter table order_detail add constraint fk_order_detail_product_id foreign key (product_id) references product (id);
+
+--25/10/2018
+alter table receipt add pick_up_date date;
+alter table receipt add delivery_date date;
+alter table receipt add pick_up_place varchar(4000);
+alter table receipt add delivery_place varchar(4000);
+
+alter table receipt_detail add recieved_amount integer;
