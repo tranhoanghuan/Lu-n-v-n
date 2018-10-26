@@ -128,3 +128,10 @@ create table task (
 	previous_status varchar(4000),
 	current_status varchar(4000)
 );
+
+alter table task add constraint fk_create_by foreign key (create_by) references staff (id);
+alter table task add constraint fk_update_by foreign key (update_by) references staff (id);
+alter table task add constraint fk_current_staff foreign key (current_staff) references staff (id);
+alter table task add constraint fk_previous_staff foreign key (previous_staff) references staff (id);
+alter table task add constraint fk_customer_order foreign key (customer_order) references customer_order(id);
+alter table task add constraint fk_receipt foreign key (receipt) references receipt(id);
