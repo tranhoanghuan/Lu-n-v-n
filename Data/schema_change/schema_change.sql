@@ -94,9 +94,37 @@ alter table customer_order add constraint fk_customer_order_promotion_id foreign
 alter table order_detail add constraint fk_order_detail_product_id foreign key (product_id) references product (id);
 
 --25/10/2018
+
+alter table order_detail add unit_price numeric(19,0);
+alter table order_detail add constraint fk_order_detail_unit_price foreign key (unit_price) references unit_price (id);
+
+alter table receipt_detail add unit_price numeric(19,0);
+alter table receipt_detail add constraint fk_receipt_detail_unit_price foreign key (unit_price) references unit_price (id);
+
 alter table receipt add pick_up_date date;
 alter table receipt add delivery_date date;
 alter table receipt add pick_up_place varchar(4000);
 alter table receipt add delivery_place varchar(4000);
 
 alter table receipt_detail add recieved_amount integer;
+
+--26/10/2018
+ALTER TABLE public.receipt ADD COLUMN staff_pick_up numeric(19, 0);
+alter table public.receipt add constraint  fk_receipt_staff_pick_up foreign key (staff_pick_up) references staff(id);
+ALTER TABLE public.receipt ADD COLUMN staff_delivery numeric(19, 0);
+alter table public.receipt add constraint  fk_receipt_staff_delivery foreign key (staff_delivery) references staff(id);
+
+create table task (
+	id serial,
+	create_by numeric(19,0),
+	update_by numeric (19,0),
+	create_date date default now(),
+	update_date date default now(),
+	task_type varchar(4000),
+	current_staff numeric(19,0),
+	previous_staff numeric(19,0),
+	customer_order numeric(19,0),
+	receipt numeric(19,0),
+	previous_status varchar(4000),
+	current_status varchar(4000)
+);
