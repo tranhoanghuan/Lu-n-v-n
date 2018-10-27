@@ -126,7 +126,8 @@ create table task (
 	customer_order numeric(19,0),
 	receipt numeric(19,0),
 	previous_status varchar(4000),
-	current_status varchar(4000)
+	current_status varchar(4000),
+  PREVIOUS_TASK varchar(1)
 );
 
 alter table task add constraint fk_create_by foreign key (create_by) references staff (id);
