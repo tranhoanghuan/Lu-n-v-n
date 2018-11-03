@@ -10,3 +10,6 @@ INSERT INTO public.branch(
 INSERT INTO public.branch(
 	branch_name, store_id, address, create_by, update_by, status, branch_avatar)
 	VALUES ('CHI NHANH NINH KIEU', 1, 'Ninh Kieu, Can Tho', 0, 0,'ACTIVE',17);
+
+insert into service_type_branch(service_type_id, branch_id, status)
+select st.id, br.id, 'ACTIVE' from service_type st, branch br where br.id=2 limit 8;
