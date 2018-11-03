@@ -136,3 +136,10 @@ alter table task add constraint fk_current_staff foreign key (current_staff) ref
 alter table task add constraint fk_previous_staff foreign key (previous_staff) references staff (id);
 alter table task add constraint fk_customer_order foreign key (customer_order) references customer_order(id);
 alter table task add constraint fk_receipt foreign key (receipt) references receipt(id);
+
+--29/10/2018
+alter table task add branch_id numeric(19,0);
+alter table task add constraint task_branch_id foreign key (branch_id) references branch(id);
+
+--02/11/2018
+alter table staff_type add staff_code varchar(4000);
