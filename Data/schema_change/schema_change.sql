@@ -143,3 +143,9 @@ alter table task add constraint task_branch_id foreign key (branch_id) reference
 
 --02/11/2018
 alter table staff_type add staff_code varchar(4000);
+--03/11/2018
+ALTER TABLE public.receipt
+    ALTER COLUMN pick_up_time TYPE time(8) without time zone ;
+
+ALTER TABLE public.receipt
+    ALTER COLUMN delivery_time TYPE time(8) without time zone ;
