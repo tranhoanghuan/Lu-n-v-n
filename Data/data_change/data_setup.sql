@@ -10,3 +10,7 @@ INSERT INTO public.branch(
 INSERT INTO public.branch(
 	branch_name, store_id, address, create_by, update_by, status, branch_avatar)
 	VALUES ('CHI NHANH NINH KIEU', 1, 'Ninh Kieu, Can Tho', 0, 0,'ACTIVE',17);
+
+--Washing machine
+insert into washing_machine(branch_id, bought_date, capacity, status, washer_code)
+select 2, now(), 10, 'ACTIVE', 'WASHER_'||nextVal('washing_machine_seq') from branch

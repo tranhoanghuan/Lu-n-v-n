@@ -149,3 +149,8 @@ ALTER TABLE public.receipt
 
 ALTER TABLE public.receipt
     ALTER COLUMN delivery_time TYPE time(8) without time zone ;
+
+--04/11/2018
+alter table public.washing_machine drop column buyer;
+alter table public.washing_machine add capacity INTEGER;
+alter table public.washing_machine add washer_code varchar(4000);
