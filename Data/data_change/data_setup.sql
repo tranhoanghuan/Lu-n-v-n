@@ -14,10 +14,10 @@ INSERT INTO public.branch(
 insert into service_type_branch(service_type_id, branch_id, status)
 select st.id, br.id, 'ACTIVE' from service_type st, branch br where br.id=2 limit 8;
 
-update branch set branch_name = 'CHI NHÁNH B?NH TH?Y 1', latidute = '10.0531254', longtidute = '105.741299', address = 'Long Hoà, B?nh Th?y, C?n Thõ, Vi?t Nam' where id = '1'
-update branch set branch_name = 'CHI NHÁNH B?NH TH?Y 2', latidute = '10.0587948', longtidute = '105.7538828', address = '393a, Tr?n Quang Di?u, An Th?i, B?nh Th?y, C?n Thõ, Vi?t Nam' where id = '2'
-update branch set branch_name = 'CHI NHÁNH NINH KI?U 1', latidute = '10.0227358', longtidute = '105.7652209', address = 'Ba Tháng Hai, Hýng L?i, Ninh Ki?u, C?n Thõ, Vi?t Nam' where id = '3'
-update branch set branch_name = 'CHI NHÁNH NINH KI?U 2', latidute = '10.0235621', longtidute = '105.7667095', address = '178 Ba Tháng Hai, Hýng L?i, Ninh Ki?u, C?n Thõ, Vi?t Nam' where id = '4'	VALUES ('CHI NHANH NINH KIEU', 1, 'Ninh Kieu, Can Tho', 0, 0,'ACTIVE',17);
+update branch set branch_name = 'CHI NHï¿½NH B?NH TH?Y 1', latidute = '10.0531254', longtidute = '105.741299', address = 'Long Hoï¿½, B?nh Th?y, C?n Thï¿½, Vi?t Nam' where id = '1';
+update branch set branch_name = 'CHI NHï¿½NH B?NH TH?Y 2', latidute = '10.0587948', longtidute = '105.7538828', address = '393a, Tr?n Quang Di?u, An Th?i, B?nh Th?y, C?n Thï¿½, Vi?t Nam' where id = '2';
+update branch set branch_name = 'CHI NHï¿½NH NINH KI?U 1', latidute = '10.0227358', longtidute = '105.7652209', address = 'Ba Thï¿½ng Hai, Hï¿½ng L?i, Ninh Ki?u, C?n Thï¿½, Vi?t Nam' where id = '3';
+update branch set branch_name = 'CHI NHï¿½NH NINH KI?U 2', latidute = '10.0235621', longtidute = '105.7667095', address = '178 Ba Thï¿½ng Hai, Hï¿½ng L?i, Ninh Ki?u, C?n Thï¿½, Vi?t Nam' where id = '4';
 
 --Washing machine
 insert into washing_machine(branch_id, bought_date, capacity, status, washer_code)
