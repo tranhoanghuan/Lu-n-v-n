@@ -154,3 +154,8 @@ ALTER TABLE public.receipt
 alter table public.washing_machine drop column buyer;
 alter table public.washing_machine add capacity INTEGER;
 alter table public.washing_machine add washer_code varchar(4000);
+
+--07/11/2018
+drop table receipt_wash_bag;
+alter table wash_bag add receipt_id numeric;
+alter table wash_bag add constraint fk_wash_bag_receipt_id foreign key (receipt_id) references receipt (id);
