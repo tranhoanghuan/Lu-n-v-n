@@ -159,3 +159,28 @@ alter table public.washing_machine add washer_code varchar(4000);
 drop table receipt_wash_bag;
 alter table wash_bag add receipt_id numeric;
 alter table wash_bag add constraint fk_wash_bag_receipt_id foreign key (receipt_id) references receipt (id);
+
+
+--08/11/2018
+-- Type: wash_search
+
+-- DROP TYPE public.wash_search;
+
+CREATE TYPE public.wash_search AS
+(
+	customer_order_id numeric(19,0),
+	receipt_id numeric,
+	wb_name character varying(255),
+	washer_code character varying(255),
+	status character varying(255)
+);
+
+ALTER TYPE public.wash_search
+    OWNER TO postgres;
+
+GRANT USAGE ON TYPE public.wash_search TO auth_authenticated;
+
+GRANT USAGE ON TYPE public.wash_search TO postgres;
+
+GRANT USAGE ON TYPE public.wash_search TO PUBLIC;
+
