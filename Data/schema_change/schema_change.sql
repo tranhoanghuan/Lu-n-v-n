@@ -166,13 +166,18 @@ alter table wash_bag add constraint fk_wash_bag_receipt_id foreign key (receipt_
 
 -- DROP TYPE public.wash_search;
 
+-- Type: wash_search
+
+-- DROP TYPE public.wash_search;
+
 CREATE TYPE public.wash_search AS
 (
 	customer_order_id numeric(19,0),
-	receipt_id numeric,
+	receipt_id numeric(19,0),
 	wb_name character varying(255),
 	washer_code character varying(255),
-	status character varying(255)
+	status character varying(255),
+	customer_name character varying(255)
 );
 
 ALTER TYPE public.wash_search
@@ -183,4 +188,22 @@ GRANT USAGE ON TYPE public.wash_search TO auth_authenticated;
 GRANT USAGE ON TYPE public.wash_search TO postgres;
 
 GRANT USAGE ON TYPE public.wash_search TO PUBLIC;
+
+--09/11/2018
+-- Type: info_washer
+
+-- DROP TYPE public.info_washer;
+
+CREATE TYPE public.info_washer AS
+(
+	id numeric(19,0),
+	sum bigint,
+	"array" numeric(19,0)[],
+	code character varying(255)
+);
+
+ALTER TYPE public.info_washer
+    OWNER TO postgres;
+
+
 
