@@ -198,8 +198,9 @@ CREATE TYPE public.info_washer AS
 (
 	id numeric(19,0),
 	sum bigint,
-	"array" numeric(19,0)[],
-	code character varying(255)
+	code character varying(255),
+	serving numeric(19,0)[],
+	pending numeric(19,0)[]
 );
 
 ALTER TYPE public.info_washer
