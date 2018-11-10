@@ -207,4 +207,7 @@ ALTER TYPE public.info_washer
     OWNER TO postgres;
 
 
+--11/10/2018
+ALTER TYPE public.wash_search
+    ADD ATTRIBUTE sn integer;
 
