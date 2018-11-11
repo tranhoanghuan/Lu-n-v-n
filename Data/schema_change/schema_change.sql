@@ -220,7 +220,8 @@ CREATE TYPE public.assign_work AS
 (
 	re_id numeric(19,0),
 	curr_user numeric(19,0),
-	washer_id numeric(19,0)
+	washer_id numeric(19,0),
+	sn integer
 );
 
 ALTER TYPE public.assign_work
