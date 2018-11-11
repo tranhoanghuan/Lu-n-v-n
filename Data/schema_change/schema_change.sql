@@ -207,7 +207,28 @@ ALTER TYPE public.info_washer
     OWNER TO postgres;
 
 
---11/10/2018
+--10/11/2018
 ALTER TYPE public.wash_search
     ADD ATTRIBUTE sn integer;
+
+--11/11/2018
+-- Type: assign_work
+
+-- DROP TYPE public.assign_work;
+
+CREATE TYPE public.assign_work AS
+(
+	re_id numeric(19,0),
+	curr_user numeric(19,0),
+	washer_id numeric(19,0)
+);
+
+ALTER TYPE public.assign_work
+    OWNER TO postgres;
+
+GRANT USAGE ON TYPE public.assign_work TO auth_authenticated;
+
+GRANT USAGE ON TYPE public.assign_work TO postgres;
+
+GRANT USAGE ON TYPE public.assign_work TO PUBLIC;
 
