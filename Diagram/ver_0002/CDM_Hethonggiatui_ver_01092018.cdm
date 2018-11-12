@@ -2428,7 +2428,7 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:CreationDate>1533312021</a:CreationDate>
 <a:ModificationDate>1534955096</a:ModificationDate>
 <a:CenterTextOffset>(-6267, 1047)</a:CenterTextOffset>
-<a:Rect>((-13493,34861), (5022,37710))</a:Rect>
+<a:Rect>((-13493,34861), (5022,37672))</a:Rect>
 <a:ListOfPoints>((-13093,35761),(4622,35761))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4632</a:ArrowStyle>
@@ -2498,7 +2498,7 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:CreationDate>1534169067</a:CreationDate>
 <a:ModificationDate>1534955042</a:ModificationDate>
 <a:CenterTextOffset>(3189, 423)</a:CenterTextOffset>
-<a:Rect>((13830,5124), (52501,6997))</a:Rect>
+<a:Rect>((13830,5124), (52501,6944))</a:Rect>
 <a:ListOfPoints>((52101,6025),(14230,6024))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4632</a:ArrowStyle>
@@ -2570,7 +2570,7 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:CreationDate>1534170543</a:CreationDate>
 <a:ModificationDate>1534955042</a:ModificationDate>
 <a:CenterTextOffset>(-2015, 475)</a:CenterTextOffset>
-<a:Rect>((29380,-3244), (43632,13125))</a:Rect>
+<a:Rect>((29380,-3244), (43632,13072))</a:Rect>
 <a:ListOfPoints>((29780,12219),(42732,12219),(42732,-2844))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4632</a:ArrowStyle>
@@ -2642,7 +2642,7 @@ DESTINATION 0 Microsoft Sans Serif,8,N</a:FontList>
 <a:CreationDate>1534173091</a:CreationDate>
 <a:ModificationDate>1541941361</a:ModificationDate>
 <a:CenterTextOffset>(-4959, 292)</a:CenterTextOffset>
-<a:Rect>((34384,-4738), (48677,27189))</a:Rect>
+<a:Rect>((34384,-4738), (48677,27136))</a:Rect>
 <a:ListOfPoints>((34784,26066),(47777,26066),(47777,-4338))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4632</a:ArrowStyle>
