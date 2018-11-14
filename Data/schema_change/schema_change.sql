@@ -233,3 +233,7 @@ GRANT USAGE ON TYPE public.assign_work TO postgres;
 
 GRANT USAGE ON TYPE public.assign_work TO PUBLIC;
 
+--14/11/2018
+alter table bill_detail add unit_price numeric;
+alter table bill_detail add constraint fk_bill_detail_unit_price foreign key (unit_price) references unit_price(id);
+
