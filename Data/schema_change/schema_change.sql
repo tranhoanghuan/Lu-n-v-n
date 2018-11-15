@@ -236,4 +236,10 @@ GRANT USAGE ON TYPE public.assign_work TO PUBLIC;
 --14/11/2018
 alter table bill_detail add unit_price numeric;
 alter table bill_detail add constraint fk_bill_detail_unit_price foreign key (unit_price) references unit_price(id);
+GRANT ALL ON SEQUENCE public.bill_seq TO auth_authenticated;
+GRANT ALL ON SEQUENCE public.bill_detail_seq TO auth_authenticated;
 
+--15/11/2018
+alter table order_detail add weight numeric(19,2);
+alter table bill add constraint fk_bill_create_by foreign key (create_by) references staff(id);
+alter table bill add constraint fk_bill_update_by foreign key (update_by) references staff(id);
