@@ -243,3 +243,8 @@ GRANT ALL ON SEQUENCE public.bill_detail_seq TO auth_authenticated;
 alter table order_detail add weight numeric(19,2);
 alter table bill add constraint fk_bill_create_by foreign key (create_by) references staff(id);
 alter table bill add constraint fk_bill_update_by foreign key (update_by) references staff(id);
+
+
+--16/11/2018
+alter table receipt add delivery_amount numeric(19,2);
+alter table customer_order add confirm_by_customer varchar(4000);
