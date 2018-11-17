@@ -248,3 +248,21 @@ alter table bill add constraint fk_bill_update_by foreign key (update_by) refere
 --16/11/2018
 alter table receipt add delivery_amount numeric(19,2);
 alter table customer_order add confirm_by_customer varchar(4000);
+
+--17/11/2018
+
+create sequence service_product_seq;
+create table service_product (
+	id numeric(19,0) default nextVal('service_product_seq') primary key,
+	service_type_id numeric(19,0),
+	product_id numeric (19,0),
+	create_date date default now(),
+	update_date date default now(),
+	create_by numeric (19,0),
+	update_by numeric (19,0)
+)
+
+alter table service_product add constraint fk_service_product_service_type_id foreign key (service_type_id) references service_type(id);
+alter table service_product add constraint fk_service_product_product_id foreign key (product_id) references product(id);
+alter table service_product add constraint fk_service_product_create_by foreign key (create_by) references staff(id);
+alter table service_product add constraint fk_service_product_update_by foreign key (update_by) references staff(id);
