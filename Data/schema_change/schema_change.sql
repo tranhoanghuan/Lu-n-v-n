@@ -266,3 +266,18 @@ alter table service_product add constraint fk_service_product_service_type_id fo
 alter table service_product add constraint fk_service_product_product_id foreign key (product_id) references product(id);
 alter table service_product add constraint fk_service_product_create_by foreign key (create_by) references staff(id);
 alter table service_product add constraint fk_service_product_update_by foreign key (update_by) references staff(id);
+
+ALTER TABLE public.order_detail
+    ALTER COLUMN amount TYPE double precision ;
+
+ALTER TABLE public.receipt_detail
+    ALTER COLUMN recieved_amount TYPE double precision ;
+
+ALTER TABLE public.receipt_detail
+    ALTER COLUMN delivery_amount TYPE double precision ;
+
+ALTER TABLE public.bill_detail
+    ALTER COLUMN amount TYPE double precision ;
+
+ALTER TABLE public.bill_detail
+    ADD COLUMN received_amount double precision;
