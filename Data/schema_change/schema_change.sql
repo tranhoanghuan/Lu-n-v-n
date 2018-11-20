@@ -287,6 +287,7 @@ ALTER TABLE public.bill_detail
 
 -- DROP TABLE public.env_var;
 
+create sequence ENV_VAR_pkey;
 CREATE TABLE public.env_var
 (
     key_name character varying COLLATE pg_catalog."default",
