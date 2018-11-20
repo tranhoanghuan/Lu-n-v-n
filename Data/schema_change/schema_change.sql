@@ -281,3 +281,27 @@ ALTER TABLE public.bill_detail
 
 ALTER TABLE public.bill_detail
     ADD COLUMN received_amount double precision;
+
+--20/11/2018
+-- Table: public.env_var
+
+-- DROP TABLE public.env_var;
+
+CREATE TABLE public.env_var
+(
+    key_name character varying COLLATE pg_catalog."default",
+    value_key character varying(255) COLLATE pg_catalog."default",
+    id bigint NOT NULL DEFAULT nextval('"ENV_VAR_id_seq"'::regclass),
+    CONSTRAINT "ENV_VAR_pkey" PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.env_var
+    OWNER to postgres;
+
+GRANT INSERT, SELECT, UPDATE ON TABLE public.env_var TO auth_authenticated;
+
+GRANT ALL ON TABLE public.env_var TO postgres;
