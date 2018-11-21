@@ -23,19 +23,16 @@ update branch set branch_name = 'CHI NHÁNH NINH KIỀU 2', latidute = '10.02356
 --promotion
 INSERT INTO public.promotion(
 	promotion_name, sale, date_start, date_end, promotion_code, create_date, status)
-	VALUES ('Khuyến mãi đợt 1', 20, '06/11/2018', '10/11/2018', 'D1_112018', current_date, 'ACTIVE');
+	VALUES ('Khuyến mãi đợt 1', 20, '2018/11/06', '2018/11/10', 'D1_112018', current_date, 'ACTIVE');
 
 INSERT INTO public.promotion(
 	promotion_name, sale, date_start, date_end, promotion_code, create_date, status)
-	VALUES ('Khuyến mãi đợt 2', 10, '11/11/2018', '15/11/2018', 'D2_112018', current_date, 'ACTIVE');
+	VALUES ('Khuyến mãi đợt 2', 10, '2018/11/11', '2018/11/15', 'D2_112018', current_date, 'ACTIVE');
 
 INSERT INTO public.promotion(
 	promotion_name, sale, date_start, date_end, promotion_code, create_date, status)
-	VALUES ('Khuyến mãi đợt 3', 10, '16/11/2018', '19/11/2018', 'D3_112018', current_date, 'ACTIVE');
+	VALUES ('Khuyến mãi đợt 3', 10, '2018/11/16', '2018/11/19', 'D3_112018', current_date, 'ACTIVE');
 
-INSERT INTO public.promotion(
-	promotion_name, sale, date_start, date_end, promotion_code, create_date, status)
-	VALUES ('Khuyến mãi đợt 3', 10, '16/11/2018', '19/11/2018', 'D3_112018', current_date, 'ACTIVE');
 
 insert into promotion_branch(promotion_id, branch_id, status)
 select pr.id, br.id, 'ACTIVE' from promotion pr, branch br where br.id=1 limit 4;
@@ -53,7 +50,7 @@ select pr.id, br.id, 'ACTIVE' from promotion pr, branch br where br.id=4 limit 4
 
 INSERT INTO public.unit_price(
 	service_type_id, unit_id, apply_date, price, create_date, status)
-	select s.id, '4', current_timestamp, '10000', current_timestamp, 'ACTIVE' from service_type s
+	select s.id, '4', current_timestamp, '10000', current_timestamp, 'ACTIVE' from service_type s;
 
 INSERT INTO public.unit_price(
 	product_id, service_type_id, material_id, unit_id, apply_date, price, create_date, status)
