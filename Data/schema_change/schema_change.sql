@@ -306,3 +306,7 @@ ALTER TABLE public.env_var
 GRANT INSERT, SELECT, UPDATE ON TABLE public.env_var TO auth_authenticated;
 
 GRANT ALL ON TABLE public.env_var TO postgres;
+
+--23/11/2018
+alter table customer_order add rating integer;
+alter table customer_order add comment varchar(4000);
